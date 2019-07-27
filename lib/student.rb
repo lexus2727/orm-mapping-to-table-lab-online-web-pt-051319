@@ -27,7 +27,7 @@ class Student
 
    def save
      #row created by instances
-     sql <<-SQL
+     sql = <<-SQL
      INSERT INTO students (name, grade)
      VALUES (?,?)
      SQL
